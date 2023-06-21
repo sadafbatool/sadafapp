@@ -36,3 +36,127 @@
     transform: rotate(360deg);
   }
 }
+
+.tasbeeh {
+  width: 83px;
+}
+.paragraph-text {
+  font-style: italic;
+  color: rgb(30, 21, 150);
+  font-weight: bolder;
+  text-align: center;
+  font-size: larger;
+}
+.styled-text {
+  text-align: center;
+}
+.updated-text {
+  text-align: center;
+  color: rgb(46, 12, 168);
+
+  font-style: italic;
+}
+.new-text {
+  background-color: rgb(204, 207, 214);
+}
+.main-text {
+  margin-left: 20px;
+}
+
+.input {
+  height: 20px;
+  font-style: italic;
+  padding: 10px;
+}
+
+.btn {
+  padding: 10px 20px;
+  margin-left: 20px;
+  border-radius: 15px;
+  max-width: 100px;
+}
+
+.del {
+  background-color: rgb(243, 47, 47);
+}
+
+.add {
+  background-color: rgb(44, 189, 44);
+}
+.edit {
+  background-color: rgb(94, 94, 167);
+}
+.update {
+  background-color: rgb(120, 171, 228);
+}
+.container {
+  background-color: rgb(99, 216, 88);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.text {
+  font-style: oblique;
+  text-align: center;
+  color: rgb(247, 15, 35);
+  font-weight: bolder;
+  font-size: larger;
+}
+.open {
+  background-color: rgb(32, 221, 25);
+  color: navy;
+  font-size: medium;
+}
+.cancel {
+  background-color: red;
+}
+.continue {
+  background-color: aqua;
+}
+.card {
+  font-style: oblique;
+  text-align: center;
+  color: blue;
+  font-weight: bolder;
+}
+
+.itemcard {
+  width: 300px;
+  height: 300px;
+  background-color: off white;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 20px;
+}
+
+.cardcontainer {
+  display: flex;
+  flex-wrap: wrap;
+}
+.cardstyle {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.2s;
+  overflow: hidden;
+}
+
+.cardstyle:hover {
+  box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.containercard {
+  padding: 2px 16px;
+}
+.cardcontent {
+  text-align: center;
+}
+
+.completed {
+  text-decoration: line-through;
+}
+
+a {
+  text-decoration: none !important;
+  color: inherit !important;
+  display: flex;
+}
