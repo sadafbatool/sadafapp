@@ -11,17 +11,7 @@ import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
 import ApartmentIcon from "@mui/icons-material/Apartment";
-
-const pages = [
-  { title: "Calculator", href: "/calculator" },
-  { title: "CSS TODO", href: "/csstodo" },
-  { title: "MUI TODO", href: "/muitodo" },
-  { title: "COUNTER", href: "/tasbeeh" },
-  //   { title: "DATA", href: "/calculator" },
-  //   { title: "DEMO", href: "/calculator" },
-  //   { title: "MODAL", href: "/calculator" },
-];
-// const settings = ["Profile", "Account", "Dashboard", "Logout"];
+import { appDetails } from "../utils/constants";
 
 function ResponsiveAppBar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -90,7 +80,7 @@ function ResponsiveAppBar() {
                 display: { xs: "block", md: "none" },
               }}
             >
-              {pages.map(({ title, href }) => (
+              {appDetails.map(({ title, href }) => (
                 <MenuItem key={title} onClick={handleCloseNavMenu}>
                   <Typography textAlign="center">
                     <Link to={href}>{title}</Link>
@@ -119,7 +109,7 @@ function ResponsiveAppBar() {
             Sadaf Apps
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
-            {pages.map(({ title, href }) => (
+            {appDetails.map(({ title, href }) => (
               <Button
                 key={title}
                 onClick={handleCloseNavMenu}
@@ -129,36 +119,6 @@ function ResponsiveAppBar() {
               </Button>
             ))}
           </Box>
-
-          {/* <Box sx={{ flexGrow: 0 }}>
-            <Tooltip title="Open settings">
-              <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                <Avatar alt="Remy Sharp" src="/static/images/avatar/2.jpg" />
-              </IconButton>
-            </Tooltip>
-            <Menu
-              sx={{ mt: "45px" }}
-              id="menu-appbar"
-              anchorEl={anchorElUser}
-              anchorOrigin={{
-                vertical: "top",
-                horizontal: "right",
-              }}
-              keepMounted
-              transformOrigin={{
-                vertical: "top",
-                horizontal: "right",
-              }}
-              open={Boolean(anchorElUser)}
-              onClose={handleCloseUserMenu}
-            >
-              {settings.map((setting) => (
-                <MenuItem key={setting} onClick={handleCloseUserMenu}>
-                  <Typography textAlign="center">{setting}</Typography>
-                </MenuItem>
-              ))}
-            </Menu>
-          </Box> */}
         </Toolbar>
       </Container>
     </AppBar>
